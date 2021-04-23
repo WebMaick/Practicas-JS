@@ -9,10 +9,10 @@ export default function cuentaRegresiva (contenedor, fechaLimite, mensaje) {
         const fechaActual = fechaLimit - new Date().getTime();
         let dia = Math.floor(fechaActual/(1000*60*60*24)),
             horas = ("0"+ Math.floor((fechaActual%(1000*60*60*24))/(1000*60*60))).  slice(-2),
-            minutos = ("0"+ Math.floor((fechaActual%(1000*60*60*24))/(1000*60))).  slice(-2),
-            segundos = ("0"+ Math.floor((fechaActual%(1000*60*60*24))/(1000))).  slice(-2)
+            minutos = ("0"+ Math.floor((fechaActual%(1000*60*60))/(1000*60))).  slice(-2),
+            segundos = ("0"+ Math.floor((fechaActual%(1000*60))/(1000))).  slice(-2)
             
-        $cuentaregresiva.innerHTML=`<h2>${dia} <small>Dias</small> ${horas} <small>Horas</small> ${minutos} <small>Minutos</small> ${segundos} <small>Segundos</small></h2>`;
+        $cuentaregresiva.innerHTML=`<h2>Faltan: ${dia} <small>Dias</small> ${horas} <small>Horas</small> ${minutos} <small>Minutos</small> <small class="segundos">${segundos}</small> <small>Segundos</small></h2>`;
         
         
         if(fechaActual < 1){

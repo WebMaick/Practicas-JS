@@ -964,6 +964,7 @@ p {
   color: #dedede;
 }
 
+/*=== Menu hamburguer ===*/
 body {
   position: relative;
 }
@@ -1066,6 +1067,31 @@ section h2 {
 .reloj__alarma-content {
   margin-top: 3rem;
   text-align: center;
+}
+
+/*=== Cuenta Regresiva ===*/
+.regresiva__content {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.regresiva__content h2 {
+  color: #021626;
+  font-size: 3rem;
+}
+
+.regresiva__content h2 small {
+  color: #e0ebed;
+  font-size: 1.5rem;
+  color: #dc143c;
+}
+
+.regresiva__content h2 .segundos {
+  display: inline-block;
+  background-color: #073846;
+  font-size: 3.5rem;
+  color: #0cd9dc;
+  padding: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,25 @@
+.regresiva__content{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.regresiva__content h2{
+    color: $principal;
+    font-size: 3rem;
+}
+
+.regresiva__content h2 small{
+    color: $claro;
+    font-size: 1.5rem;
+    color: $danger;
+}
+
+.regresiva__content h2 .segundos{
+    display: inline-block;
+    background-color: $secundario;
+    font-size: 3.5rem;
+    color: $info-1;
+    padding: 1.5rem;
+}
+
+

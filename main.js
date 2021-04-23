@@ -1,3 +1,4 @@
+import { btnScroll } from "./js/btnScroll.js";
 import cuentaRegresiva from "./js/cuentaRegresiva.js";
 import { hamburger } from "./js/hamburger.js";
 import { reloj, alarma } from "./js/relojalarma.js";
@@ -17,4 +18,7 @@ d.addEventListener('DOMContentLoaded', () =>{
 
     /*=== Funcion para Cuenta Regresiva ===*/
     cuentaRegresiva('regresiva__content', 'Febrary 28, 2022 13:45:00', 'Feliz cumleaños MICHI');
+
+    /*=== Funcion para Btn Scroll ===*/
+    btnScroll('.btn__scroll');
 });

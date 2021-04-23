@@ -74,7 +74,8 @@ section h2{
     padding: 1rem 0;
 }
 
-.btn__menu{
+.btn__menu,
+.btn__scroll{
     position: fixed;
     bottom: 1vh;
     right: 1vw;
@@ -87,6 +88,20 @@ section h2{
     align-items: center;
     justify-content: center;
     padding: 0;
+}
+
+.btn__scroll{
+    right: calc(2vw + 4rem);
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    font-size: 2.5rem;
+    color: $claro;
+    transition: all .5s ease-out;
+}
+
+.btn__scroll:hover{
+    background-color: lighten($color: $danger, $amount: 20);
 }
 
 /*=== Estilos Reloj y Alarma ===*/

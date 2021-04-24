@@ -3,6 +3,7 @@ import cuentaRegresiva from "./js/cuentaRegresiva.js";
 import darkMode from "./js/darkMode.js";
 import { hamburger } from "./js/hamburger.js";
 import { reloj, alarma } from "./js/relojalarma.js";
+import responsive from "./js/responsive.js";
 
 const d = document;
     
@@ -25,4 +26,18 @@ d.addEventListener('DOMContentLoaded', () =>{
 
     /*=== Funcion para cambiar MODO DARK ===*/
     darkMode('.btn__dark', 'mode__dark')
+
+    /*=== Funcion para Responsive ===*/
+    responsive(
+        'youtube', 
+        '(min-width: 1024px)', 
+        `<a href='https://www.youtube.com/watch?v=0bmE9XY3sOc' target='_blank' rel='noopener'>Ver Video...</a>`, 
+        `<iframe width="560" height="315" src="https://www.youtube.com/embed/0bmE9XY3sOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
+    
+    
+    responsive(
+        'gmaps', 
+        '(min-width: 1024px)', 
+        `<a href='https://www.openstreetmap.org/#map=17/-16.49107/-68.11951&layers=N' target='_blank' rel='noopener'>Ver Video...</a>`, 
+        '<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-68.12156438827516%2C-16.492540452879624%2C-68.11745524406435%2C-16.48959822943036&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small></small>');
 });

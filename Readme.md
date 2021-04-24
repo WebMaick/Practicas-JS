@@ -6,3 +6,4 @@
 3. Cuenta Regresiva
 4. Boton Scroll - Top
 5. Modo Dark - Ligth
+6. Responsive Video - Maps

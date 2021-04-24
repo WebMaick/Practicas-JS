@@ -1043,7 +1043,8 @@ section h2 {
 }
 
 .btn__menu,
-.btn__scroll {
+.btn__scroll,
+.btn__dark {
   position: fixed;
   bottom: 1vh;
   right: 1vw;
@@ -1072,6 +1073,22 @@ section h2 {
   background-color: #f16581;
 }
 
+.btn__dark {
+  left: 1vw;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  font-size: 2.5rem;
+  background-color: #ff8c00;
+  color: #292b2c;
+  transition: color 0.3s ease-in-out;
+}
+
+.btn__dark:hover {
+  background-color: #161616;
+  color: #ff8c00;
+}
+
 /*=== Estilos Reloj y Alarma ===*/
 .inicia-reloj:disabled,
 .inicia-alarma:disabled {
@@ -1082,6 +1099,12 @@ section h2 {
 .reloj__alarma-content {
   margin-top: 3rem;
   text-align: center;
+}
+
+/*=== Estilos Dark ===*/
+.mode__dark {
+  background-color: #30313e;
+  color: #e0ebed;
 }
 
 /*=== Cuenta Regresiva ===*/

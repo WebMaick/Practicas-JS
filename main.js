@@ -1,5 +1,6 @@
 import { btnScroll } from "./js/btnScroll.js";
 import cuentaRegresiva from "./js/cuentaRegresiva.js";
+import darkMode from "./js/darkMode.js";
 import { hamburger } from "./js/hamburger.js";
 import { reloj, alarma } from "./js/relojalarma.js";
 
@@ -21,4 +22,7 @@ d.addEventListener('DOMContentLoaded', () =>{
 
     /*=== Funcion para Btn Scroll ===*/
     btnScroll('.btn__scroll');
+
+    /*=== Funcion para cambiar MODO DARK ===*/
+    darkMode('.btn__dark', 'mode__dark')
 });

@@ -75,7 +75,8 @@ section h2{
 }
 
 .btn__menu,
-.btn__scroll{
+.btn__scroll,
+.btn__dark{
     position: fixed;
     bottom: 1vh;
     right: 1vw;
@@ -104,6 +105,23 @@ section h2{
     background-color: lighten($color: $danger, $amount: 20);
 }
 
+.btn__dark{
+    left: 1vw;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    font-size: 2.5rem;
+    background-color: $edit;
+    color: $dark-1;
+    transition: color .3s ease-in-out;
+}
+
+.btn__dark:hover{
+    background-color: darken($color: $dark, $amount: 10);
+    color: $edit;
+}
+
+
 /*=== Estilos Reloj y Alarma ===*/
 
 .inicia-reloj:disabled,
@@ -117,3 +135,10 @@ section h2{
     text-align: center;
 }
 
+
+/*=== Estilos Dark ===*/
+
+.mode__dark{
+    background-color: $dark-2;
+    color: $claro;
+}

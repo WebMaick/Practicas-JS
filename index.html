@@ -21,8 +21,13 @@
         <li><a href="#seccion1">Reloj y Alarma</a></li>
         <li><a href="#seccion2">Cuenta Regresiva</a></li>
         <li><a href="#seccion3">Responsive Video - Maps</a></li>
-        <li><a href="#seccion4">seccion 4</a></li>
-        <li><a href="#seccion5">seccion 5</a></li>
+        <li><a href="#seccion4">Responsive Tester</a></li>
+        <li><a href="#seccion5">Deteccion de Dispositivos - (User Agent)</a></li>
+        <li><a href="#seccion6">Deteccion de Red</a></li>
+        <li><a href="#seccion7"></a></li>
+        <li><a href="#seccion8"></a></li>
+        <li><a href="#seccion9"></a></li>
+        <li><a href="#seccion10"></a></li>
     </ul>
     
     <main>
@@ -58,11 +63,53 @@
             <div class="gmaps" id="gmaps"></div>
         </section>
 
-        <section class="section" id="seccion4">
-            <h2>Seccion 4</h2>
+        <section class="section responsive-tester" id="seccion4">
+            <h2>Responsive Tester</h2>
+            <form id="form-tester">
+                <div class="form__content">
+                    <label for="url">Ingrese la direccion URL a verificar</label>
+                    <input type="url" name="url" id="url" placeholder="Direccion url de la pagina">    
+                </div>
+                <div class="form__content">
+                    <label for="ancho">Ingrese el ancho de la ventana</label>
+                    <input type="ancho" name="ancho" id="ancho" placeholder="Ej. 540">    
+                </div>
+                <div class="form__content">
+                    <label for="alto">Ingrese el alto de la ventana</label>
+                    <input type="alto" name="alto" id="alto" placeholder="Ej. 320">    
+                </div>
+
+                <div>
+                    <input class="btn btn-primary" name="evaluar" type="submit" value="Evaluar">
+                    
+                    <input class="btn btn-danger" name="cerrar" type="button" value="Cerrar">
+                </div>
+            </form>
         </section>
+
         <section class="section" id="seccion5">
-            <h2>Seccion 5</h2>
+            <h2>Deteccion de Dispositivos <br> (User Agent)</h2>
+            <div id="user-device"></div>
+        </section>
+
+        <section class="section" id="seccion6">
+            <h2>Deteccion de Red</h2>    
+        </section>
+
+        <section class="section" id="seccion7">
+            <h2>seccion 7</h2>    
+        </section>
+
+        <section class="section" id="seccion8">
+            <h2>seccion 8</h2>    
+        </section>
+
+        <section class="section" id="seccion9">
+            <h2>seccion 9</h2>    
+        </section>
+
+        <section class="section" id="seccion10">
+            <h2>seccion 10</h2>    
         </section>
     </main>
     

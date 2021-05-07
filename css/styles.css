@@ -1142,4 +1142,63 @@ section h2 {
   color: #021626;
 }
 
+/*=== Responsive Resposive - Tester ===*/
+.responsive-tester {
+  margin-top: 10px;
+}
+.responsive-tester form {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.responsive-tester form .form__content {
+  display: flex;
+  flex-direction: column;
+}
+.responsive-tester form .form__content label {
+  font-size: 1rem;
+}
+.responsive-tester form .form__content input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: thin solid #a9a9a9;
+  color: #e0ebed;
+  font-size: 1rem;
+  height: 40px;
+  margin: 10px 0;
+  outline: none;
+}
+
+/*=== Responsive Deteccion de Red ===*/
+.deteccion__online {
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deteccion__content {
+  box-shadow: 0 0 3px 0 rgba(224, 235, 237, 0.7);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+}
+.deteccion__content h2 {
+  color: #0275d8;
+}
+.deteccion__content .offline {
+  color: #dc143c;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -7,3 +7,6 @@
 4. Boton Scroll - Top
 5. Modo Dark - Ligth
 6. Responsive Video - Maps
+7. Responsive Tester
+8. Deteccion de Dispositivos - (User Agent) - pantalla adicional segun a la medida.
+9. Deteccion de Red onLine - offLine

@@ -9,6 +9,7 @@ import filterBusqeuda from "./js/filterBusqueda.js";
 import getGeolocalizacion from "./js/geolocalizacion.js";
 import { hamburger } from "./js/hamburger.js";
 import { reloj, alarma } from "./js/relojalarma.js";
+import responsiveSlider from "./js/responiveSlider.js";
 import responsive from "./js/responsive.js";
 import { sorteoDigital } from "./js/sorteoDigital.js";
 import { testerResponsive } from "./js/testerResponsive.js";
@@ -69,6 +70,9 @@ d.addEventListener('DOMContentLoaded', () =>{
 
     /*=== Funcion para Sorteo Digital ===*/
     sorteoDigital('#winner-btn', '.player');
+
+    /*=== Funcion para Slider Slide ===*/
+    responsiveSlider('#prev', '#next', '.slider__slide');
 });
 
 

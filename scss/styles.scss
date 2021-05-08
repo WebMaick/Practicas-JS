@@ -14,14 +14,17 @@
 /*=== Responsive Resposive - Tester ===*/
 @import './components/responsivetexter';
 
-/*=== Responsive Deteccion de Red ===*/
+/*=== Deteccion de Red ===*/
 @import './components/deteccionred';
 
-/*=== Responsive Deteccion Camara ===*/
+/*=== Deteccion Camara ===*/
 @import './components/deteccioncamara';
 
-/*=== Responsive Geolocalizacion ===*/
+/*=== Geolocalizacion ===*/
 @import './components/geolocalizacion';
 
-/*=== Responsive Filtro Busqueda ===*/
+/*=== Filtro Busqueda ===*/
 @import './components/filtrobusqueda';
+
+/*=== Responsive Slider ===*/
+@import './components/responsiveslider';

@@ -1004,17 +1004,12 @@ section h2 {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
   width: 100%;
   height: 100vh;
   z-index: 9990;
   background-color: rgba(2, 22, 38, 0.9);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   transform: translateX(-100%);
+  overflow-y: auto;
   transition: transform 0.3s ease-in;
 }
 
@@ -1170,7 +1165,7 @@ section h2 {
   outline: none;
 }
 
-/*=== Responsive Deteccion de Red ===*/
+/*=== Deteccion de Red ===*/
 .deteccion__online {
   background-color: rgba(0, 0, 0, 0.7);
   bottom: 0;
@@ -1201,7 +1196,7 @@ section h2 {
   color: #dc143c;
 }
 
-/*=== Responsive Deteccion Camara ===*/
+/*=== Deteccion Camara ===*/
 .seccion7 {
   display: flex;
   flex-direction: column;
@@ -1225,7 +1220,7 @@ section h2 {
   margin-right: auto;
 }
 
-/*=== Responsive Geolocalizacion ===*/
+/*=== Geolocalizacion ===*/
 .geolocalizacion__content {
   align-items: center;
   display: flex;
@@ -1255,7 +1250,7 @@ section h2 {
   color: #e0ebed;
 }
 
-/*=== Responsive Filtro Busqueda ===*/
+/*=== Filtro Busqueda ===*/
 .section9 {
   align-items: center;
   display: flex;
@@ -1310,6 +1305,63 @@ section h2 {
   order: 1;
   pointer-events: none;
   visibility: hidden;
+}
+
+/*=== Responsive Slider ===*/
+.slider {
+  margin: 1rem auto;
+  position: relative;
+  text-align: center;
+  width: 80%;
+}
+
+.slider__content {
+  position: relative;
+  height: 400px;
+}
+
+.slider__slide {
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: opacity 1s ease;
+}
+.slider__slide img {
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+
+.slide-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slider__btns {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  justify-content: space-between;
+  padding: 0 10px;
+  width: 100%;
+}
+.slider__btns a {
+  background-color: #f7f7f7;
+  border: 1px solid #2f2f2f;
+  border-radius: 50%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__btns a:last-child img {
+  transform: scaleX(-1);
 }
 
 /*# sourceMappingURL=styles.css.map */

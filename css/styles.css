@@ -1255,4 +1255,61 @@ section h2 {
   color: #e0ebed;
 }
 
+/*=== Responsive Filtro Busqueda ===*/
+.section9 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section9 h2 {
+  text-align: center;
+}
+.section9 input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: thin solid #e0ebed;
+  color: #e0ebed;
+  font-size: 1rem;
+  height: 40px;
+  outline: none;
+  width: 300px;
+}
+.section9 .filtro__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+.section9 .card {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  transition: all 0.5s ease-out;
+}
+.section9 .card img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.section9 .card figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 50px;
+  left: 0;
+  line-height: 50px;
+  text-align: center;
+  width: 100%;
+}
+.section9 .filtro__filter {
+  opacity: 0;
+  order: 1;
+  pointer-events: none;
+  visibility: hidden;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -1,13 +1,16 @@
+//@ts-check
 import { btnScroll } from "./js/btnScroll.js";
 import cuentaRegresiva from "./js/cuentaRegresiva.js";
 import darkMode from "./js/darkMode.js";
 import deteccionCamara from "./js/deteccionCamara.js";
 import deteccionDispositvos from "./js/deteccionDispositvos.js";
 import deteccionRed from "./js/deteccionRed.js";
+import filterBusqeuda from "./js/filterBusqueda.js";
 import getGeolocalizacion from "./js/geolocalizacion.js";
 import { hamburger } from "./js/hamburger.js";
 import { reloj, alarma } from "./js/relojalarma.js";
 import responsive from "./js/responsive.js";
+import { sorteoDigital } from "./js/sorteoDigital.js";
 import { testerResponsive } from "./js/testerResponsive.js";
 
 const d = document;
@@ -60,6 +63,12 @@ d.addEventListener('DOMContentLoaded', () =>{
     /*=== Funcion para Geolocalizacion ===*/
     getGeolocalizacion('geolocalizacion');
 
+
+    /*=== Funcion para Filtro de Busqueda ===*/
+    filterBusqeuda('.card__filter', '.card');    
+
+    /*=== Funcion para Sorteo Digital ===*/
+    sorteoDigital('#winner-btn', '.player');
 });
 
 

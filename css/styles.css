@@ -1201,4 +1201,58 @@ section h2 {
   color: #dc143c;
 }
 
+/*=== Responsive Deteccion Camara ===*/
+.seccion7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.seccion7 h2 {
+  text-align: center;
+}
+.seccion7 .camara__error {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.seccion7 .camara__error mark {
+  background-color: #dc143c;
+  color: #e0ebed;
+  padding: 1rem 2rem;
+}
+.seccion7 video {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*=== Responsive Geolocalizacion ===*/
+.geolocalizacion__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  height: 500px;
+  justify-content: center;
+}
+.geolocalizacion__content .camara__error {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.geolocalizacion__content .camara__error mark {
+  background-color: #dc143c;
+  color: #e0ebed;
+  padding: 1rem 2rem;
+}
+.geolocalizacion__content p {
+  color: #ff8c00;
+  font-size: 1.2rem;
+}
+.geolocalizacion__content ul li {
+  color: #0cd9dc;
+}
+.geolocalizacion__content ul li b {
+  color: #e0ebed;
+}
+
 /*# sourceMappingURL=styles.css.map */

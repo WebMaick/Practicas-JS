@@ -1,0 +1,26 @@
+.seccion7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2{
+        text-align: center;
+    }
+
+    .camara__error{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+
+        mark{
+            background-color: $danger;
+            color: $claro;
+            padding: 1rem 2rem;
+        }
+    }
+
+    video{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

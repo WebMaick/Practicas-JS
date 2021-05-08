@@ -1,0 +1,40 @@
+
+
+
+
+
+
+.geolocalizacion__content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    height: 500px;
+    justify-content: center;
+
+    
+    .camara__error{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+
+        mark{
+            background-color: $danger;
+            color: $claro;
+            padding: 1rem 2rem;
+        }
+    }
+
+    p{
+        color: $edit;
+        font-size: 1.2rem;
+    }
+
+    ul li{
+        color: $info-1;
+    }
+
+    ul li b{
+        color: $claro;
+    }
+}

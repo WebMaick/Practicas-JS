@@ -1,8 +1,10 @@
 import { btnScroll } from "./js/btnScroll.js";
 import cuentaRegresiva from "./js/cuentaRegresiva.js";
 import darkMode from "./js/darkMode.js";
+import deteccionCamara from "./js/deteccionCamara.js";
 import deteccionDispositvos from "./js/deteccionDispositvos.js";
 import deteccionRed from "./js/deteccionRed.js";
+import getGeolocalizacion from "./js/geolocalizacion.js";
 import { hamburger } from "./js/hamburger.js";
 import { reloj, alarma } from "./js/relojalarma.js";
 import responsive from "./js/responsive.js";
@@ -51,6 +53,12 @@ d.addEventListener('DOMContentLoaded', () =>{
 
     /*=== Funcion para deteccion de Dispositivos ===*/
     deteccionDispositvos('user-device');
+
+    /*=== Funcion de deteccion de camara ===*/
+    deteccionCamara('webcam');
+
+    /*=== Funcion para Geolocalizacion ===*/
+    getGeolocalizacion('geolocalizacion');
 
 });
 

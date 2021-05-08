@@ -10,3 +10,5 @@
 7. Responsive Tester
 8. Deteccion de Dispositivos - (User Agent) - pantalla adicional segun a la medida.
 9. Deteccion de Red onLine - offLine
+10. Deteccion de Camara Web
+11. Geolocalizaciòn

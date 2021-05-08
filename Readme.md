@@ -14,3 +14,4 @@
 11. Geolocalizaciòn.
 12. Filtro de Busqueda.
 13. Sorteo Digital.
+14. Responsive Slider

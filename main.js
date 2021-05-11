@@ -11,6 +11,7 @@ import { hamburger } from "./js/hamburger.js";
 import { reloj, alarma } from "./js/relojalarma.js";
 import responsiveSlider from "./js/responiveSlider.js";
 import responsive from "./js/responsive.js";
+import { scrollSpyMenu } from "./js/scrollSpyMenu.js";
 import { sorteoDigital } from "./js/sorteoDigital.js";
 import { testerResponsive } from "./js/testerResponsive.js";
 
@@ -73,6 +74,9 @@ d.addEventListener('DOMContentLoaded', () =>{
 
     /*=== Funcion para Slider Slide ===*/
     responsiveSlider('#prev', '#next', '.slider__slide');
+
+    /*=== Funcion para Scroll Spia ===*/
+    scrollSpyMenu();
 });
 
 

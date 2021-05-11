@@ -1,7 +1,7 @@
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
- * @author Jonathan Suh @jonsuh
+ * @author 
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
@@ -970,8 +970,18 @@ body {
 }
 
 header {
-  width: 100%;
   background-color: #dc143c;
+  height: 4rem;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+}
+
+main {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header__content {
@@ -993,6 +1003,7 @@ section {
   min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
+  padding: 4rem 0;
 }
 
 section h2 {
@@ -1068,7 +1079,8 @@ section h2 {
   background-color: #f16581;
 }
 
-.btn__dark {
+.btn__dark,
+.active-spy {
   left: 1vw;
   cursor: pointer;
   border: 0;
@@ -1102,6 +1114,44 @@ section h2 {
   color: #e0ebed;
 }
 
+@media screen and (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 4rem auto;
+    grid-template-areas: "header header" "main   panel";
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  .menu__nav {
+    grid-area: panel;
+    position: sticky;
+    top: 4rem;
+    transform: translateX(0);
+  }
+  .menu__nav li {
+    text-align: right;
+    padding: 0 5px;
+  }
+  .menu__nav li a {
+    font-size: 0.9rem;
+  }
+
+  .btn__menu {
+    display: none;
+  }
+
+  .btn__scroll {
+    right: calc(20% + 1vw);
+  }
+}
 /*=== Cuenta Regresiva ===*/
 .regresiva__content {
   width: 100%;

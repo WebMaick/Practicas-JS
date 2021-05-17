@@ -21,8 +21,8 @@ export const scrollSpyMenu = () => {
     const observer = new IntersectionObserver(callback, {
         //root
         //rootMargin:"-250px"
-        //threshold:0.5
-        threshold:[0.5,0.75]
+        threshold:0.5
+        //threshold:[0.5,0.75]
     })
     
     $section.forEach(el => observer.observe(el))

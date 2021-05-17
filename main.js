@@ -8,12 +8,15 @@ import deteccionRed from "./js/deteccionRed.js";
 import filterBusqeuda from "./js/filterBusqueda.js";
 import getGeolocalizacion from "./js/geolocalizacion.js";
 import { hamburger } from "./js/hamburger.js";
+import narrador from "./js/narrador.js";
 import { reloj, alarma } from "./js/relojalarma.js";
 import responsiveSlider from "./js/responiveSlider.js";
 import responsive from "./js/responsive.js";
 import { scrollSpyMenu } from "./js/scrollSpyMenu.js";
 import { sorteoDigital } from "./js/sorteoDigital.js";
 import { testerResponsive } from "./js/testerResponsive.js";
+import validaciones_formulario from "./js/validaciones_formulario.js";
+import videoInteligente from "./js/videoInteligente.js";
 
 const d = document;
     
@@ -77,8 +80,18 @@ d.addEventListener('DOMContentLoaded', () =>{
 
     /*=== Funcion para Scroll Spia ===*/
     scrollSpyMenu();
+
+    /*=== Funcion Video Inteligente ===*/
+    videoInteligente();
+
+    /*=== Funcion para validar formulario ===*/
+    validaciones_formulario();
 });
 
 
 /*=== Funcion Para deteccion de Red ===*/
 deteccionRed();
+
+
+/*=== Funcion para narrador ===*/
+narrador();

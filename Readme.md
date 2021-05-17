@@ -16,3 +16,6 @@
 13. Sorteo Digital.
 14. Responsive Slider.
 15. Scroll Spy Menu.
+16. Video Inteligente.
+17. Validacion de Formularios.
+18. Narrador

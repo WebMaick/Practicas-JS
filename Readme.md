@@ -19,3 +19,7 @@
 16. Video Inteligente.
 17. Validacion de Formularios.
 18. Narrador
+
+## CRUD Fetch - Axios
+1. Creacion de crud con Fetch y json server
+1. Creacion de crud con Axios y json server

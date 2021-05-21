@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Fetch</title>
+</head>
+<body>
+    <h1>CRUD API REST FETCH</h1>
+    
+    <article>
+        <h2 class="crud-title">Agregar Santo</h2>
+        <form class="crud-form">
+            <input type="text" name="nombre" placeholder="Ingrese nombre" required>
+            <input type="text" name="constelacion" placeholder="Ingrese constelacion" required>
+
+            <input type="submit" value="Enviar">
+            <input type="hidden" name="id">
+        </form>
+    </article>
+
+    <article>
+        <h2>Ver Santo</h2>
+        <table class="crud-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Constelaciòn</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </article>
+
+    <template id="crud-template">
+        <tr>
+            <td class="name"></td>
+            <td class="constellation"></td>
+            <td>
+                <button class="edit">Edtiar</button>
+                <button class="delete">Eliminar</button>
+            </td>
+        </tr>
+    </template>
+
+    <script src="./crudFetch.js"></script>
+</body>
+</html>

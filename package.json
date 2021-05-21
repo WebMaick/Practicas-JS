@@ -1,12 +1,12 @@
 {
   "dependencies": {
+    "axios": "^0.21.1",
     "hamburgers": "^1.1.3"
   },
   "name": "practicas-jm",
   "description": "1. Creacion de Menu. 2. Alarma Sonora - Reloj Digital.  3. Cuenta Regresiva 4. Boton Scroll - Top 5. Modo Dark - Ligth 6. Responsive Video - Maps 7. Responsive Tester 8. Deteccion de Dispositivos - (User Agent) - pantalla adicional segun a la medida. 9. Deteccion de Red onLine - offLine 10. Deteccion de Camara Web 11. Geolocalizaciòn",
   "version": "1.0.0",
   "main": "main.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

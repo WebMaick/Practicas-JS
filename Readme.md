@@ -22,4 +22,7 @@
 
 ## CRUD Fetch - Axios
 1. Creacion de crud con Fetch y json server
-1. Creacion de crud con Axios y json server
+2. Creacion de crud con Axios y json server
+
+## Pagina AJAX inlcudes Header Footer 
+1. Creacion de una pagina con ayuda de cabezera AJAX-Ejercicios

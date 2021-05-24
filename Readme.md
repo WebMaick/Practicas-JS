@@ -26,3 +26,6 @@
 
 ## Pagina AJAX inlcudes Header Footer 
 1. Creacion de una pagina con ayuda de cabezera AJAX-Ejercicios
+
+## Creacion de Cargado de Archivos UPLOADER
+1. creacion de uploader con fetch

@@ -1,0 +1,53 @@
+*,::after,::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #2f2f2f;
+    min-height: 100vh;
+    width: 100%;
+}
+
+main{
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+main progress{
+    margin-top: 1rem;
+}
+
+.drop__zone{
+    margin-left: auto;
+    margin-right: auto;
+    border: thin dotted white;
+    width: 80%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.drop__zone.is-active{
+    border: thick dashed #000;
+    background-color: rgba(0, 128, 0, 5);
+    animation: pulse 1.5s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes pulse {
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}

@@ -1,8 +1,9 @@
 # Serie de Ejericios en Vanilla JavaScript
+
 ## MANEJO DE DOM
 
 1. Creacion de Menu.
-2. Alarma Sonora - Reloj Digital. 
+2. Alarma Sonora - Reloj Digital.
 3. Cuenta Regresiva.
 4. Boton Scroll - Top.
 5. Modo Dark - Ligth.
@@ -21,8 +22,15 @@
 18. Narrador
 
 ## CRUD Fetch - Axios
+
 1. Creacion de crud con Fetch y json server
 2. Creacion de crud con Axios y json server
 
-## Pagina AJAX inlcudes Header Footer 
+## Pagina AJAX inlcudes Header Footer
+
 1. Creacion de una pagina con ayuda de cabezera AJAX-Ejercicios
+
+## Ajax
+
+1. Busqueda de Canciones
+1. Municipios con select

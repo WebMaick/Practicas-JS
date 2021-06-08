@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>TV Shows</title>
+    </head>
+    <body>
+        <div class="tv__container">
+            <h1 class="tv__title">Buscador Shows de TV</h1>
+            <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Buscar Shows"
+            />
+            <section id="tv__shows" class="tv__grid-fluid"></section>
+
+            <template id="show-template">
+                <article class="tv__show">
+                    <h3></h3>
+                    <div></div>
+                    <img />
+                    <a></a>
+                </article>
+            </template>
+        </div>
+
+        <script src="./tvShows.js"></script>
+    </body>
+</html>

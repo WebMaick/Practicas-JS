@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Canciones</title>
+    </head>
+    <body>
+        <div class="canciones__container">
+            <h1 class="canciones__title">Buscador de Canciones</h1>
+            <form class="canciones__form" id="canciones__form">
+                <input
+                    type="text"
+                    name="artista"
+                    placeholder="Artista Musical"
+                    required
+                />
+                <input
+                    type="text"
+                    name="tema"
+                    placeholder="Nombre de la Cancion"
+                    required
+                />
+                <button type="submit" class="btn">BUSCAR</button>
+            </form>
+            <img
+                class="canciones__loader none"
+                src="../img/loader.svg"
+                alt="Cargando..."
+            />
+
+            <aside class="canciones__error"></aside>
+
+            <main class="canciones__main">
+                <article class="canciones__artist">
+                    <h2>Informacion del Artista</h2>
+                </article>
+
+                <article class="canciones__letra">
+                    <h2>Letra de la Cancion</h2>
+                </article>
+            </main>
+        </div>
+
+        <script src="./canciones.js" type="module"></script>
+    </body>
+</html>

@@ -1,34 +1,36 @@
-*,::after,::before{
+*,
+::after,
+::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #292b2c;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-.container{
+.container {
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     width: 98%;
 }
 
-.header{
+.header {
     width: 100%;
     height: 70px;
     background-color: #dc143c;
 }
 
-.header__content{
+.header__content {
     align-items: center;
     display: flex;
     height: inherit;
@@ -36,53 +38,231 @@ img{
 }
 
 .header__logo,
-.header__menu{
+.header__menu {
     align-items: center;
     display: flex;
     height: inherit;
 }
 
-.header__logo img{
+.header__logo img {
     height: 50px;
 }
 
-.header__menu a{
+.header__menu a {
     color: lightgrey;
     font-size: 1.2rem;
     margin: 0 10px;
     text-decoration: none;
-    transition: color .3s ease-in;
+    transition: color 0.3s ease-in;
 }
 
-.header__menu a:hover{
+.header__menu a:hover {
     color: white;
 }
 
 /*=== Estilos Main ===*/
 
-main{
+main {
     color: burlywood;
     flex-grow: 1;
     padding: 20px 0;
 }
 
-main h1{
+main h1 {
     text-align: center;
     margin: 10px 0;
 }
 
-main p{
+main p {
     margin: 10px 0;
 }
 
-main img{
+main img {
     height: 100%;
     object-fit: cover;
     object-position: top;
     width: 100%;
 }
 
-/*=== Estilos Footer ===*/
-.footer{
-    
+/*=== Estilos ARCHIVO DE API-POKEMON ===*/
+.pokemon__title,
+.tv__title,
+.canciones__title {
+    background-color: #dc143c;
+    color: #bcb4b4;
+    padding: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pokemon__loader,
+.tv__loader,
+.canciones__loader {
+    display: block;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+
+.pokemon__grid-fluida,
+.tv__grid-fluid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    padding: 10px;
+    width: 100%;
+}
+
+.pokemon__figure {
+    box-shadow: 0 0 3px white;
+    height: 300px;
+    position: relative;
+    width: 100%;
+}
+
+.pokemon__figure img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.pokemon__figure figcaption {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    display: flex;
+    font-size: 0.9rem;
+    height: 50px;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.pokemon__links {
+    display: block;
+    text-align: center;
+}
+
+.pokemon__links a {
+    color: white;
+    display: inline-block;
+    font-size: 25px;
+    margin: 10px;
+}
+
+/*=== Estilos TV API ===*/
+.tv__error {
+    background-color: #dc143c;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.tv__noexiste {
+    color: #dc143c;
+}
+
+.tv__container input {
+    background: transparent;
+    border: 0;
+    border-bottom: thin solid white;
+    color: white;
+    display: block;
+    font-size: 1.1rem;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    outline: none;
+    padding-left: 10px;
+    width: 30%;
+}
+
+.tv__show img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/*=== Estilos Canciones ===*/
+.canciones__form {
+    align-items: center;
+    box-shadow: 1px 1px 3px 1px rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 10px;
+    width: 350px;
+}
+
+.canciones__form input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: thin solid #bcb4b4;
+    color: white;
+    height: 30px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    outline: none;
+    width: 100%;
+}
+
+.canciones__form button {
+    background-color: teal;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    outline: none;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+.canciones__main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.canciones__letra blockquote {
+    white-space: pre-wrap;
+}
+
+.none {
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+    .canciones__main {
+        flex-direction: row;
+    }
+
+    .canciones__main > * {
+        padding: 1rem;
+        flex-basis: 50%;
+    }
+}
+
+/*=== Estilos Municipios ===*/
+.municipio__container {
+    color: #bcb4b4;
+    min-height: 100vh;
+    width: 100%;
 }
